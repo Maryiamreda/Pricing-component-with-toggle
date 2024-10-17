@@ -25,6 +25,11 @@
 
 }
 
+.basic,
+.master {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
 @media only screen and (max-width: 640px) {
 
   .basic,

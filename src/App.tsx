@@ -27,7 +27,7 @@ function App() {
       </label>
 
       <div></div>
-      <div className='cards flex flex-col sm:flex-col gap-8 sm:gap-0 md:flex-row my-12'>
+      <div className='cards flex flex-col sm:flex-col gap-8 sm:gap-0 md:flex-row my-10'>
         <div className=' basic bg-white h-96 w-80' >
           <p className="ms-4 text-base font-bold text-price  opacity-95">Basic</p>
           {type == "annually" ? (<h1 className='font-bold  text-price'><span>$</span><span className=' text-5xl'>199.99</span></h1>) : (<h1 className='font-bold  text-price'><span>$</span><span className=' text-5xl'>19.99</span></h1>)}
@@ -37,7 +37,7 @@ function App() {
           </p>
           <p>  Send up to 3 GB
           </p>
-          <button>  Learn More
+          <button className="bg-primary-gradient text-white font-medium py-2 px-4 rounded shadow-lg">  Learn More
           </button>
         </div>
         <div className='professional bg-primary-gradient  h-96 w-80 sm:h-128 sm:w-75  sm:relative static -top-8 rounded-lg '>
@@ -62,7 +62,7 @@ function App() {
           </p>
           <p>  Send up to 20 GB
           </p>
-          <button>  Learn More
+          <button className="bg-primary-gradient text-white font-medium py-2 px-4 rounded shadow-lg">  Learn More
           </button>
         </div>
 
