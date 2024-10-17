@@ -29,8 +29,8 @@ function App() {
       <div></div>
       <div className='cards flex flex-col sm:flex-col gap-8 sm:gap-0 md:flex-row my-12'>
         <div className=' basic bg-white h-96 w-80' >
-          <p>Basic</p>
-          {type == "annually" ? (<h1><span>$</span>199.99</h1>) : (<h1><span>$</span>19.99</h1>)}
+          <p className="ms-4 text-base font-bold text-price  opacity-95">Basic</p>
+          {type == "annually" ? (<h1 className='font-bold  text-price'><span>$</span><span className=' text-5xl'>199.99</span></h1>) : (<h1 className='font-bold  text-price'><span>$</span><span className=' text-5xl'>19.99</span></h1>)}
           <p>  500 GB Storage
           </p>
           <p>  2 Users Allowed
@@ -40,8 +40,9 @@ function App() {
           <button>  Learn More
           </button>
         </div>
-        <div className='professional bg-primary-gradient  h-96 w-80 sm:h-128 sm:w-72  sm:relative static -top-8 rounded-lg '>  <p>Professional</p>
-          {type == "annually" ? (<h1><span>$</span>249.99</h1>) : (<h1><span>$</span>24.99</h1>)}
+        <div className='professional bg-primary-gradient  h-96 w-80 sm:h-128 sm:w-75  sm:relative static -top-8 rounded-lg '>
+          <p className="ms-4 text-base text-white font-bold opacity-95 ">Professional</p>
+          {type == "annually" ? (<h1 className='font-bold  text-white '><span className=''>$</span> <span className=' text-5xl'>249.99</span></h1>) : (<h1 className='font-bold  text-white  '><span>$</span><span className=' text-5xl'>24.99</span></h1>)}
 
           <p>  1 TB Storage
           </p>
@@ -52,9 +53,9 @@ function App() {
           <button>  Learn More
           </button>
         </div>
-        <div className=' master bg-white h-96 w-80 '>
-          <p>Master</p>
-          {type == "annually" ? (<h1><span>$</span>399.99</h1>) : (<h1><span>$</span>39.99</h1>)}
+        <div className=' master  bg-white h-96 w-80 '>
+          <p className="ms-4  font-bold text-base opacity-95">Master</p>
+          {type == "annually" ? (<h1 className='font-bold  text-price'><span>$</span><span className=' text-5xl'>399.99</span></h1>) : (<h1 className='font-bold  text-price '><span>$</span><span className=' text-5xl'>39.99</span></h1>)}
           <p>  2 TB Storage
           </p>
           <p>  10 Users Allowed
