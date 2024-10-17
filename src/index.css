@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .toggle {
+    @apply relative w-11 h-6 bg-primary-gradient bg-cover rounded-full hover:opacity-70;
+  }
+
+  .toggle::after {
+    content: '';
+    @apply absolute top-[2px] left-[2px] bg-white border border-gray-300 rounded-full h-5 w-5 transition-all;
+  }
+
+  .peer:checked+.toggle::after {
+    @apply translate-x-full;
+  }
+
+  .peer:checked+.toggle {
+    @apply bg-blue-600;
+  }
+}
+
+
+:root {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+body {
+  background: url(../src/assets/bg-top.svg) right top no-repeat, url(../src/assets/bg-bottom.svg) left bottom no-repeat;
+  background-size: 22vw;
+  background-color: hsl(240, 78%, 98%);
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 1.9em;
+  line-height: 1.1;
+}

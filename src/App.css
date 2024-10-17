@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.cards div {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+}
+
+.basic {
+  border-radius: 9px 0 0 9px;
+}
+
+.master {
+  border-radius: 0 9px 9px 0;
+
+}
+
+@media only screen and (max-width: 640px) {
+
+  .basic,
+  .master {
+    border-radius: 9px;
+  }
+}
+
+
+.cards p {}
