@@ -12,8 +12,7 @@
 .cards div {
   display: flex;
   flex-direction: column;
-  gap: 30px;
-  padding: 50px;
+  gap: 19px;
 }
 
 .basic {
@@ -28,6 +27,10 @@
 .basic,
 .master {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+#button:hover {
+  background-color: #7e7ecc;
 }
 
 @media only screen and (max-width: 640px) {

@@ -9,14 +9,15 @@ export default {
       colors: {
         headers: 'hsl(233, 13%, 49%)',
         price: ' hsl(232, 13%, 33%)',
-        details: 'hsl(234, 14%, 74%)'
+        details: 'hsl(234, 14%, 74%)',
+        gradiant: '#7278e0',
 
       },
       backgroundImage: {
         'primary-gradient': 'linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%))',
       },
       height: {
-        '128': '28rem',
+        '128': '26rem',
       },
       width: {
         '75': '19rem'
